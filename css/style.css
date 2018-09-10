@@ -1,9 +1,11 @@
+/****CONTENEDOR****/
 #contenedor {
     margin: auto;
     display: flex;
     width: 200px; 
 }
 
+/****ESTILO DE LA LISTA****/
 li, a {
     list-style: none;
     text-decoration: none;
@@ -18,10 +20,9 @@ li, a {
     background-color:#a13eac;
 }
 
-.desplegable li a:hover{
-    background-color: #9c8aa5;
-    color: #ffffff;
-    font-size: 18px;
+/****POSICIONANDO LAS LISTAS****/
+.dropdown > li{
+    float: left;
 }
 
 .dropdown li ul{
@@ -29,6 +30,17 @@ li, a {
     position: absolute;
 } 
 
+.dropdown li ul li {
+    position: relative;
+}
+
+/****HOVER****/
+.desplegable li a:hover{
+    background-color: #9c8aa5;
+    color: #ffffff;
+    font-size: 18px;
+}
 .dropdown li:hover > ul{
     display: block;
 }
+
